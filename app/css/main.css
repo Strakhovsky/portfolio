@@ -1,0 +1,47 @@
+@font-face {
+  font-family: Lato;
+  src: url(../fonts/Lato/Lato-Black.ttf);
+  src: url(../fonts/Lato/Lato-BlackItalic.ttf);
+  src: url(../fonts/Lato/Lato-Bold.ttf);
+  src: url(../fonts/Lato/Lato-BoldItalic.ttf);
+  src: url(../fonts/Lato/Lato-Hairline.ttf);
+  src: url(../fonts/Lato/Lato-HairlineItalic.ttf);
+  src: url(../fonts/Lato/Lato-Italic.ttf);
+  src: url(../fonts/Lato/Lato-Light.ttf);
+  src: url(../fonts/Lato/Lato-LightItalic.ttf);
+  src: url(../fonts/Lato/Lato-Regular.ttf); }
+
+@font-face {
+  font-family: Roboto;
+  src: url(../fonts/Roboto/Roboto-Black.ttf);
+  src: url(../fonts/Roboto/Roboto-BlackItalic.ttf);
+  src: url(../fonts/Roboto/Roboto-Bold.ttf);
+  src: url(../fonts/Roboto/Roboto-BoldItalic.ttf);
+  src: url(../fonts/Roboto/Roboto-Italic.ttf);
+  src: url(../fonts/Roboto/Roboto-Light.ttf);
+  src: url(../fonts/Roboto/Roboto-LightItalic.ttf);
+  src: url(../fonts/Roboto/Roboto-Medium.ttf);
+  src: url(../fonts/Roboto/Roboto-MediumItalic.ttf);
+  src: url(../fonts/Roboto/Roboto-Regular.ttf);
+  src: url(../fonts/Roboto/Roboto-Thin.ttf);
+  src: url(../fonts/Roboto/Roboto-ThinItalic.ttf); }
+
+.intro-text {
+  text-align: center; }
+  .intro-text h1 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+    font-size: 80px;
+    letter-spacing: 7px;
+    color: #2c3e50; }
+  .intro-text p {
+    font-size: 50px;
+    color: #2c3e50; }
+  .intro-text a {
+    color: #76818d;
+    border: 1px solid #76818d;
+    -webkit-border-radius: 8px;
+            border-radius: 8px;
+    font-size: 30px;
+    margin: 5px;
+    padding: 10px; }

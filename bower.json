@@ -1,0 +1,14 @@
+{
+  "name": "Strakhovsky",
+  "description": "Jon Snow portfolio",
+  "main": "index.js",
+  "authors": [
+    "Dmitry"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.1.0"
+  }
+}

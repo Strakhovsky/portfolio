@@ -36,7 +36,8 @@
     color: #2c3e50; }
   .intro-text p {
     font-size: 50px;
-    color: #2c3e50; }
+    color: #2c3e50;
+    margin-bottom: 30px; }
   .intro-text a {
     color: #76818d;
     border: 1px solid #76818d;

@@ -45,11 +45,11 @@ body, html {
   .intro-text h1 {
     font-family: 'Lato', sans-serif;
     font-weight: 600;
-    font-size: 80px;
+    font-size: 70px;
     letter-spacing: 7px;
     color: #E0F2F1; }
   .intro-text p {
-    font-size: 50px;
+    font-size: 40px;
     color: #E0F2F1;
     margin-bottom: 30px; }
   .intro-text a.intro-btn {
@@ -74,3 +74,16 @@ body, html {
       text-decoration: none; }
     .intro-text a.intro-btn:focus {
       text-decoration: none; }
+
+div#nav {
+  z-index: 9999; }
+  div#nav div#nav.affix {
+    position: fixed;
+    top: 0;
+    width: 100%; }
+  div#nav .navbar-custom {
+    margin-bottom: 0;
+    background-color: #E0F2F1;
+    -webkit-border-radius: 0px;
+            border-radius: 0px;
+    padding: 6px 0; }

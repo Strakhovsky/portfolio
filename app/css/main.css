@@ -81,9 +81,9 @@ div#nav {
     position: fixed;
     top: 0;
     width: 100%; }
-  div#nav .navbar-custom {
-    margin-bottom: 0;
-    background-color: #E0F2F1;
-    -webkit-border-radius: 0px;
-            border-radius: 0px;
-    padding: 6px 0; }
+    div#nav div#nav.affix div.navbar-custom {
+      margin-bottom: 0;
+      background-color: #E0F2F1;
+      -webkit-border-radius: 0px;
+              border-radius: 0px;
+      padding: 6px 0; }

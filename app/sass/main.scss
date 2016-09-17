@@ -98,13 +98,17 @@ div#nav {
         position: fixed;
         top: 0;
         width: 100%;
-    }
     
-    .navbar-custom {
-        margin-bottom: 0;
-        background-color: #E0F2F1;
-        border-radius: 0px;
-        padding: 6px 0;
+        div.navbar-custom {
+            margin-bottom: 0;
+            background-color: #E0F2F1;
+            border-radius: 0px;
+            padding: 6px 0;
+            
+            div.container {
+                
+            }
+        }
     }
 }
 

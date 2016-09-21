@@ -23,8 +23,9 @@ gulp.task('sass', function() {
 gulp.task('scripts', function(){
     return gulp.src([ //Нужно взять все необходимые библиотеки
         'app/libs/jquery/dist/jquery.min.js', //Здесь мы взяли Джейквери
-        'app/libs/magnific-popup/dist/jquery.magnific-popup.min.js'
-    ])
+        'app/libs/magnific-popup/dist/jquery.magnific-popup.min.js', // Тут берём Магнифик попап
+        'app/libs/bootstrap/dist/bootstrap.min.js' // Тут берём бутстрап JS
+    ]) 
     .pipe(concat('lib.min.js'))
     .pipe(uglify())
     .pipe(gulp.dest('app/js'));

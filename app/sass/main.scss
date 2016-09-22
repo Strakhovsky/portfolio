@@ -32,6 +32,8 @@
 
 // Начало переменных *************************************************************************
 $secondColor: #EEEEEE;
+$navbarCol: #212121;
+$orange: #E87E04;
 
 // Конец переменных **************************************************************************
 
@@ -41,6 +43,7 @@ body, html {
     font-family: 'Lato', sans-serif;
     width: 100% !important;
     height: 100% !important;
+    font-size: 20px;
 }
 
 h2 {
@@ -125,22 +128,22 @@ div#nav.affix {
 
 nav.navbar-custom {
     margin-bottom: 0;
-    background-color: $secondColor;
+    background-color: $navbarCol;
     border-radius: 0px;
     padding: 6px 0;
 
     a {
-        color: #2c3e50;
+        color: $secondColor;
         font-size: 20px;
         
         &:hover {
-            background-color: #2c3e50;
-            color: #E0F2F1;
+            background-color: $navbarCol;
+            color: $orange;
             text-decoration: none;
             }
         &:active {
-            background-color: #E0F2F1;
-            color: #2c3e50;
+            background-color: $navbarCol;
+            color: $orange;
             text-decoration: none;
             }
         &:visited {
@@ -155,17 +158,35 @@ nav.navbar-custom {
     font-weight: 600;
 }
 
-// Конец стилей навигации ***************************************************************
+// End navigation styles ***************************************************************
+
+// Start about styles *******************************************************************
 
 #about {
     padding: 80px 0;
-}
+     
+     img {
+        border-radius: 50%;
+        width: 200px;
+        height: 200px;
+        display: inline-block;
+    }
 
-#about img {
-    border-radius: 50%;
-    width: 200px;
-    height: 200px;
-    display: inline-block;
+    p {
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+
+    .btn-primary {
+        background: $navbarCol;
+        color: $orange;
+        border: 2px solid white;
+        
+        &:hover {
+            border: 2px solid $orange;
+        }
+    }
+
 }
 
 .section-title.center {
@@ -178,11 +199,16 @@ nav.navbar-custom {
         width: 70px;
         text-align: center;
         position: relative;
-        background: #E87E04;
+        background: $orange;
         margin: 0 auto;
         margin-bottom: 30px;
         border: 0;
     }
 }
-// Начало стилей About ******************************************************************
+
+.section-title h2, .section-title.center h2 {
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+// End about styles ******************************************************************
 

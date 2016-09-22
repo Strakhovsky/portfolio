@@ -27,8 +27,15 @@
   src: url(../fonts/Roboto/Roboto-ThinItalic.ttf); }
 
 body, html {
+  font-family: 'Lato', sans-serif;
   width: 100% !important;
   height: 100% !important; }
+
+h2 {
+  text-transform: uppercase;
+  line-height: 20px;
+  margin: 0;
+  color: #2c3e50; }
 
 .intro {
   background: url(../img/intro-js.jpg) no-repeat fixed center;
@@ -43,18 +50,17 @@ body, html {
   padding-top: 0px;
   padding-bottom: 200px; }
   .intro-text h1 {
-    font-family: 'Lato', sans-serif;
     font-weight: 600;
     font-size: 70px;
     letter-spacing: 7px;
-    color: #E0F2F1; }
+    color: #EEEEEE; }
   .intro-text p {
     font-size: 40px;
-    color: #E0F2F1;
+    color: #EEEEEE;
     margin-bottom: 30px; }
   .intro-text a.intro-btn {
-    color: #E0F2F1;
-    border: 2px solid #E0F2F1;
+    color: #EEEEEE;
+    border: 2px solid #EEEEEE;
     -webkit-border-radius: 8px;
             border-radius: 8px;
     font-size: 25px;
@@ -77,13 +83,56 @@ body, html {
 
 div#nav {
   z-index: 9999; }
-  div#nav div#nav.affix {
-    position: fixed;
-    top: 0;
-    width: 100%; }
-    div#nav div#nav.affix div.navbar-custom {
-      margin-bottom: 0;
+
+div#nav.affix {
+  position: fixed;
+  top: 0;
+  width: 100%; }
+
+nav.navbar-custom {
+  margin-bottom: 0;
+  background-color: #EEEEEE;
+  -webkit-border-radius: 0px;
+          border-radius: 0px;
+  padding: 6px 0; }
+  nav.navbar-custom a {
+    color: #2c3e50;
+    font-size: 20px; }
+    nav.navbar-custom a:hover {
+      background-color: #2c3e50;
+      color: #E0F2F1;
+      text-decoration: none; }
+    nav.navbar-custom a:active {
       background-color: #E0F2F1;
-      -webkit-border-radius: 0px;
-              border-radius: 0px;
-      padding: 6px 0; }
+      color: #2c3e50;
+      text-decoration: none; }
+    nav.navbar-custom a:visited {
+      text-decoration: none; }
+    nav.navbar-custom a:focus {
+      text-decoration: none; }
+
+.navbar-custom .navbar-brand {
+  font-weight: 600; }
+
+#about {
+  padding: 80px 0; }
+
+#about img {
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  display: inline-block; }
+
+.section-title.center {
+  padding: 30px 0; }
+
+.section-title.center hr {
+  height: 4px;
+  width: 70px;
+  text-align: center;
+  position: relative;
+  background: #E87E04;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  border: 0; }

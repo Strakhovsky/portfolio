@@ -120,11 +120,11 @@ div#nav {
     z-index: 9999;
 }
 
-div#nav.affix {
+/* div#nav.affix-top {
     position: fixed;
     top: 0;
     width: 100%;
-}
+} */ //Пока неработает, нужно разобраться
 
 nav.navbar-custom {
     margin-bottom: 0;

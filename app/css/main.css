@@ -85,11 +85,11 @@ h2 {
 div#nav {
   z-index: 9999; }
 
-div#nav.affix {
-  position: fixed;
-  top: 0;
-  width: 100%; }
-
+/* div#nav.affix-top {
+    position: fixed;
+    top: 0;
+    width: 100%;
+} */
 nav.navbar-custom {
   margin-bottom: 0;
   background-color: #212121;

@@ -26,6 +26,10 @@
   src: url(../fonts/Roboto/Roboto-Thin.ttf);
   src: url(../fonts/Roboto/Roboto-ThinItalic.ttf); }
 
+@font-face {
+  font-family: Font-Awesome;
+  src: url(../fonts/font-awesome-4.6.3/fonts/fontawesome-webfont.ttf); }
+
 body, html {
   font-family: 'Lato', sans-serif;
   width: 100% !important;
@@ -85,6 +89,10 @@ header .intro-text {
 div#nav {
   z-index: 9999; }
 
+.affix-custom {
+  position: absolute;
+  width: 100%; }
+
 .affix {
   position: fixed;
   top: 0;
@@ -98,7 +106,9 @@ nav.navbar-custom {
   padding: 6px 0; }
   nav.navbar-custom a {
     color: #EEEEEE;
-    font-size: 20px; }
+    font-size: 20px;
+    -webkit-transition: color 0.2s;
+    transition: color 0.2s; }
     nav.navbar-custom a:hover {
       background-color: #212121;
       color: #E87E04;

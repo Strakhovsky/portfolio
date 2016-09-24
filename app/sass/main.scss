@@ -28,6 +28,12 @@
     src: url(../fonts/Roboto/Roboto-Thin.ttf);
     src: url(../fonts/Roboto/Roboto-ThinItalic.ttf);
 }
+
+@font-face {
+    font-family: Font-Awesome;
+    src: url(../fonts/font-awesome-4.6.3/fonts/fontawesome-webfont.ttf);
+}
+
 // Конец шрифтов *****************************************************************************
 
 // Начало переменных *************************************************************************
@@ -120,11 +126,16 @@ div#nav {
     z-index: 9999;
 }
 
+.affix-custom {
+    position: absolute;
+    width: 100%;
+}
+
 .affix {
     position: fixed;
     top: 0;
     width: 100%;
-}  
+}
 
 nav.navbar-custom {
     margin-bottom: 0;
@@ -136,21 +147,22 @@ nav.navbar-custom {
         
         color: $secondColor;
         font-size: 20px;
+        transition: color 0.2s;
         
         &:hover {
             background-color: $navbarCol;
             color: $orange;
             text-decoration: none;
-            }
+        }
         &:active {
             background-color: $navbarCol;
             color: $orange;
             text-decoration: none;
-            }
+        }
         &:visited {
             background-color: $navbarCol;
             text-decoration: none;
-            }
+        }
         &:focus {
             text-decoration: none;
         }
@@ -212,5 +224,7 @@ nav.navbar-custom {
     font-weight: 700;
     margin-bottom: 30px;
 }
+
 // End about styles ******************************************************************
 
+// Start service styles **************************************************************

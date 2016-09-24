@@ -1,8 +1,6 @@
- var pageScroll = $('page-scroll');
-
-
  $(document).ready(function(){
-	$('#nav').on("click", "a", function (event) {
+	 //var pageScroll = $('a.page-scroll');
+	$(document).on('click', '.page-scroll', function (event) {
 		//отменяем стандартную обработку нажатия по ссылке
 		event.preventDefault();
 

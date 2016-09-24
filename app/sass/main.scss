@@ -67,7 +67,7 @@ h2 {
 	padding: 100px 0;
 }
 
-.intro-text {
+header .intro-text {
     padding-top: 0px;
     padding-bottom: 200px;
      
@@ -120,11 +120,11 @@ div#nav {
     z-index: 9999;
 }
 
-/* div#nav.affix-top {
+.affix {
     position: fixed;
     top: 0;
     width: 100%;
-} */ //Пока неработает, нужно разобраться
+}  
 
 nav.navbar-custom {
     margin-bottom: 0;
@@ -133,6 +133,7 @@ nav.navbar-custom {
     padding: 6px 0;
 
     a {
+        
         color: $secondColor;
         font-size: 20px;
         
@@ -147,6 +148,7 @@ nav.navbar-custom {
             text-decoration: none;
             }
         &:visited {
+            background-color: $navbarCol;
             text-decoration: none;
             }
         &:focus {

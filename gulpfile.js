@@ -23,7 +23,8 @@ gulp.task('sass', function() {
 gulp.task('scripts', function(){
     return gulp.src([ //Нужно взять все необходимые библиотеки
         'app/libs/jquery/dist/jquery.min.js', //Здесь мы взяли Джейквери
-        'app/libs/bootstrap/dist/js/bootstrap.js' //здесь мы берём Bootstrap
+        'app/libs/bootstrap/dist/js/bootstrap.js', //здесь мы берём Bootstrap
+         'app/libs/isotope/dist/isotope.pkgd.js' // Ставим плагин изотопа
     ]) 
     .pipe(concat('libs.min.js'))
     //.pipe(uglify())

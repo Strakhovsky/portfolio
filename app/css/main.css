@@ -26,10 +26,15 @@
   src: url(../fonts/Roboto/Roboto-Thin.ttf);
   src: url(../fonts/Roboto/Roboto-ThinItalic.ttf); }
 
-@font-face {
-  font-family: Font-Awesome;
-  src: url(../fonts/font-awesome-4.6.3/fonts/fontawesome-webfont.ttf); }
-
+/*@font-face {
+    font-family: Font-Awesome;
+    src: url(../fonts/font-awesome-4.6.3/fonts/FontAwesome.otf);
+    src: url(../fonts/font-awesome-4.6.3/fonts/fontawesome-webfont.eot);
+    src: url(../fonts/font-awesome-4.6.3/fonts/fontawesome-webfont.svg);
+    src: url(../fonts/font-awesome-4.6.3/fonts/fontawesome-webfont.ttf);
+    src: url(../fonts/font-awesome-4.6.3/fonts/fontawesome-webfont.woff);
+    src: url(../fonts/font-awesome-4.6.3/fonts/fontawesome-webfont.woff2);
+} */
 body, html {
   font-family: 'Lato', sans-serif;
   width: 100% !important;
@@ -88,6 +93,8 @@ header .intro-text {
 
 div#nav {
   z-index: 9999; }
+  div#nav i.glyphicon {
+    color: white; }
 
 .affix-custom {
   position: absolute;
@@ -160,3 +167,19 @@ nav.navbar-custom {
 .section-title h2, .section-title.center h2 {
   font-weight: 700;
   margin-bottom: 30px; }
+
+#services {
+  padding: 80px 0;
+  background: url(../img/services-bg.jpg);
+  background-size: cover;
+  background-attachment: fixed; }
+  #services i.glyphicon {
+    font-size: 50px; }
+  #services .fa {
+    font-size: 60px; }
+  #services h4 {
+    color: #E87E04;
+    font-size: 25px; }
+
+.space {
+  margin-top: 40px; }

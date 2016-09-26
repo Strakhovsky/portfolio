@@ -29,10 +29,15 @@
     src: url(../fonts/Roboto/Roboto-ThinItalic.ttf);
 }
 
-@font-face {
+/*@font-face {
     font-family: Font-Awesome;
+    src: url(../fonts/font-awesome-4.6.3/fonts/FontAwesome.otf);
+    src: url(../fonts/font-awesome-4.6.3/fonts/fontawesome-webfont.eot);
+    src: url(../fonts/font-awesome-4.6.3/fonts/fontawesome-webfont.svg);
     src: url(../fonts/font-awesome-4.6.3/fonts/fontawesome-webfont.ttf);
-}
+    src: url(../fonts/font-awesome-4.6.3/fonts/fontawesome-webfont.woff);
+    src: url(../fonts/font-awesome-4.6.3/fonts/fontawesome-webfont.woff2);
+} */
 
 // Конец шрифтов *****************************************************************************
 
@@ -124,6 +129,10 @@ header .intro-text {
 
 div#nav {
     z-index: 9999;
+
+    i.glyphicon {
+        color: white;
+    }
 }
 
 .affix-custom {
@@ -228,3 +237,27 @@ nav.navbar-custom {
 // End about styles ******************************************************************
 
 // Start service styles **************************************************************
+
+#services {
+	padding: 80px 0;
+	background: url(../img/services-bg.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+        
+        i.glyphicon {
+            font-size: 50px;
+        }
+
+        .fa {
+            font-size: 60px;
+        }
+
+        h4 {
+            color: $orange;
+            font-size: 25px;
+        }
+}
+
+.space {
+    margin-top: 40px;
+}

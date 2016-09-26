@@ -64,6 +64,34 @@ h2 {
     color: #2c3e50;
 }
 
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}
+.clearfix {
+	display: inline-block;
+}
+* html .clearfix {
+	height: 1%;
+}
+.clearfix {
+	display: block;
+}
+
+ul, ol {
+	padding: 0;
+	webkit-padding: 0;
+	moz-padding: 0;
+}
+
+ul, ol {
+	list-style: none;
+}
+
 // Конец общих стилей ********************************************************************
 
 // Начало стилей Header'a ********************************************************************
@@ -281,31 +309,38 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 	padding-bottom: 30px;
 	text-align: center;
 }
-ul.cat li {
+.cat li {
 	display: inline-block;
 }
-ol.type li {
+
+ol.type {
 	display: inline-block;
-	margin-left: 20px;
+	
+    li {
+        margin-left: 20px;
+    }
+
+    li:after {
+        content: ' | ';
+        margin-left: 20px;
+    }
+    li:last-child:after {
+        content: none;
+    }
+    li a {
+        color: #616e7c;
+        padding: 2px 8px;
+        font-size: 15px;
+    }
+    li a.active {
+        color: #E87E04;
+        padding: 2px 8px;
+    }
+    li a:hover {
+        color: #E87E04;
+    }
 }
-ol.type li:after {
-	content: ' | ';
-	margin-left: 20px;
-}
-ol.type li:last-child:after {
-	content: '';
-}
-ol.type li a {
-	color: #616e7c;
-	padding: 2px 8px;
-}
-ol.type li a.active {
-	color: #E87E04;
-	padding: 2px 8px;
-}
-ol.type li a:hover {
-	color: #E87E04;
-}
+
 .isotope-item {
 	z-index: 2
 }

@@ -23,7 +23,7 @@ gulp.task('sass', function() {
 gulp.task('scripts', function(){
     return gulp.src([ //Нужно взять все необходимые библиотеки
         'app/libs/jquery/dist/jquery.min.js', //Здесь мы взяли Джейквери
-        'app/libs/bootstrap/dist/js/bootstrap.js'
+        'app/libs/bootstrap/dist/js/bootstrap.js' //здесь мы берём Bootstrap
     ]) 
     .pipe(concat('libs.min.js'))
     //.pipe(uglify())

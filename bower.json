@@ -11,6 +11,7 @@
     "bootstrap": "^3.3.7",
     "jquery": "^3.1.0",
     "smooth-scroll": "^1.0.1",
-    "isotope": "^3.0.1"
+    "isotope": "^3.0.1",
+    "jquery.easy-pie-chart": "^2.1.6"
   }
 }

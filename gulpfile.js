@@ -22,9 +22,10 @@ gulp.task('sass', function() {
 
 gulp.task('scripts', function(){
     return gulp.src([ //Нужно взять все необходимые библиотеки
-        'app/libs/jquery/dist/jquery.min.js', //Здесь мы взяли Джейквери
+        'app/libs/jquery/dist/jquery.js', //Здесь мы взяли Джейквери
         'app/libs/bootstrap/dist/js/bootstrap.js', //здесь мы берём Bootstrap
-         'app/libs/isotope/dist/isotope.pkgd.js' // Ставим плагин изотопа
+        'app/libs/isotope/dist/isotope.pkgd.js', // Ставим плагин изотопа
+        'app/libs/jquery.easy-pie-chart/dist/jquery.easypiechart.js' // Ставим плагин для канваса(круглые процентные штуки) изи пей чарт
     ]) 
     .pipe(concat('libs.min.js'))
     //.pipe(uglify())

@@ -33,20 +33,22 @@ $(document).ready( function () {
             itemSelector: '.isotope-item',
             layoutMode: 'fitRows',
             filter: '*',
+            transitionDuration: '0.8s',
             animationOptions: {
-                duration: 750,
+                duration: 800,
                 easing: 'linear',
                 queue: false
             }
         });
-        $('.cat a').click(function() { console.log('lol)))')
+        $('.cat a').click(function() {
             $('.cat .active').removeClass('active');
             $(this).addClass('active');
             var selector = $(this).attr('data-filter');
             $container.isotope({
                 filter: selector,
+                transitionDuration: '0.8s',
                 animationOptions: {
-                    duration: 750,
+                    duration: 800,
                     easing: 'linear',
                     queue: false
                 }
@@ -68,6 +70,10 @@ $(document).ready(function(e) {
 			
 				$('.chart').easyPieChart({
 					easing: 'easeOutBounce',
+                    lineWidth: '9',
+                    barColor: '#2c3e50',
+                    size: '152',
+                    lineCap: 'square',
 					onStep: function(from, to, percent) {
 						$(this.el).find('.percent').text(Math.round(percent));
 					}

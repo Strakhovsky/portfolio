@@ -340,6 +340,7 @@ ol.type {
         color: #E87E04;
     }
 }
+
 /*
 .isotope-item {
 	z-index: 2
@@ -347,7 +348,7 @@ ol.type {
 .isotope-hidden.isotope-item {
 	z-index: 1
 }
-.isotope, .isotope .isotope-item {
+.isotope, .isotope-item {
 	// change duration value to whatever you like
 	-webkit-transition-duration: 0.8s;
 	-moz-transition-duration: 0.8s;
@@ -373,6 +374,7 @@ ol.type {
 	transition-property: transform, opacity;
 }
 */
+
 .portfolio-item {
 	margin-bottom: 30px;
 	-webkit-transition: all 0.5s ease-out;
@@ -458,9 +460,10 @@ ol.type {
 	padding: 0px;
 }
 #skills .skill h4 {
-	font-weight: 700;
-	color: #E87E04;
-	text-shadow: 1px 1px #fff;
+	font-weight: 900;
+    font-size: 25px;
+	color: $orange;
+	//text-shadow: 1px 1px #fff;
 }
 .chart {
 	position: relative;

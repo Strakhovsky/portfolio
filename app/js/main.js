@@ -27,9 +27,11 @@ $('#nav').affix({
 
 // Плагин Изотоп
 
-$(window).load(function() {
+$(document).ready( function () {
         var $container = $('.portfolio-items');
         $container.isotope({
+            itemSelector: '.isotope-item',
+            layoutMode: 'fitRows',
             filter: '*',
             animationOptions: {
                 duration: 750,
@@ -37,7 +39,7 @@ $(window).load(function() {
                 queue: false
             }
         });
-        $('.cat a').click(function() {
+        $('.cat a').click(function() { console.log('lol)))')
             $('.cat .active').removeClass('active');
             $(this).addClass('active');
             var selector = $(this).attr('data-filter');
@@ -51,5 +53,28 @@ $(window).load(function() {
             });
             return false;
         });
+});
 
-    });
+// Skills
+
+$(document).ready(function(e) {
+	//var windowBottom = $(window).height();
+	var index=0;
+	$(document).scroll(function(){
+		var top = $('#skills').height()-$(window).scrollTop();
+		console.log(top)
+		if(top<-1000){
+			if(index==0){	
+			
+				$('.chart').easyPieChart({
+					easing: 'easeOutBounce',
+					onStep: function(from, to, percent) {
+						$(this.el).find('.percent').text(Math.round(percent));
+					}
+				});
+			
+				}
+			index++;
+		}
+	})
+})

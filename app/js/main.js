@@ -83,4 +83,15 @@ $(document).ready(function(e) {
 			index++;
 		}
 	})
-})
+});
+
+// counterUp
+
+$(document).ready(function( $ ) {
+		if($("span.count").length > 0){	
+			$('span.count').counterUp({
+					delay: 0.1, // the delay time in ms
+			time: 1000 // the speed time in ms
+			});
+		}
+	});

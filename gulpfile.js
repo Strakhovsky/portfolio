@@ -21,11 +21,13 @@ gulp.task('sass', function() {
 });
 
 gulp.task('scripts', function(){
-    return gulp.src([ //Нужно взять все необходимые библиотеки
-        'app/libs/jquery/dist/jquery.js', //Здесь мы взяли Джейквери
-        'app/libs/bootstrap/dist/js/bootstrap.js', //здесь мы берём Bootstrap
-        'app/libs/isotope/dist/isotope.pkgd.js', // Ставим плагин изотопа
-        'app/libs/jquery.easy-pie-chart/dist/jquery.easypiechart.js' // Ставим плагин для канваса(круглые процентные штуки) изи пей чарт
+    return gulp.src([ //Get all need libs
+        'app/libs/jquery/dist/jquery.js', //jQuery
+        'app/libs/bootstrap/dist/js/bootstrap.js', //Bootstrap
+        'app/libs/isotope/dist/isotope.pkgd.js', //Isotop
+        'app/libs/jquery.easy-pie-chart/dist/jquery.easypiechart.js', // easyPieChart
+        'app/libs/waypoints/lib/jquery.waypoints.js', // easyPieChart
+        'app/libs/jquery.counterup/jquery.counterup.js' // easyPieChart
     ]) 
     .pipe(concat('libs.min.js'))
     //.pipe(uglify())

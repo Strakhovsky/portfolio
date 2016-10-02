@@ -27,7 +27,8 @@ gulp.task('scripts', function(){
         'app/libs/isotope/dist/isotope.pkgd.js', //Isotop
         'app/libs/jquery.easy-pie-chart/dist/jquery.easypiechart.js', // easyPieChart
         'app/libs/waypoints/lib/jquery.waypoints.js', // easyPieChart
-        'app/libs/jquery.counterup/jquery.counterup.js' // easyPieChart
+        'app/libs/jquery.counterup/jquery.counterup.js', // easyPieChart
+        'app/libs/owl-carousel/owl.carousel.js'// owlCarousel = slider
     ]) 
     .pipe(concat('libs.min.js'))
     //.pipe(uglify())

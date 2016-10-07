@@ -90,7 +90,7 @@ $(document).ready(function(e) {
 $(document).ready(function( $ ) {
 		if($("span.count").length > 0){	
 			$('span.count').counterUp({
-					delay: 0.1, // the delay time in ms
+					delay: 10, // the delay time in ms
 			time: 1000 // the speed time in ms
 			});
 		}

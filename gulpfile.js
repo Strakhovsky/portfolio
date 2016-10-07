@@ -28,8 +28,8 @@ gulp.task('scripts', function(){
         'app/libs/jquery.easy-pie-chart/dist/jquery.easypiechart.js', // easyPieChart
         'app/libs/waypoints/lib/jquery.waypoints.js', // easyPieChart
         'app/libs/jquery.counterup/jquery.counterup.js', // easyPieChart
-        'app/libs/owl-carousel/owl.carousel.js',// owlCarousel = slider
-        'app/libs/contact-me/contact-me.js' // form
+        'app/libs/owl-carousel/owl.carousel.js'// owlCarousel = slider
+       // 'app/libs/contact-me/contact-me.js' // form
     ]) 
     .pipe(concat('libs.min.js'))
     //.pipe(uglify())

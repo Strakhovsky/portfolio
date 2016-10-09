@@ -1,43 +1,34 @@
 // Начало шрифтов *********************************************************************
 @font-face {
     font-family: Lato;
-    src: url(../fonts/Lato/Lato-Black.ttf);
-    src: url(../fonts/Lato/Lato-BlackItalic.ttf);
-    src: url(../fonts/Lato/Lato-Bold.ttf);
-    src: url(../fonts/Lato/Lato-BoldItalic.ttf);
-    src: url(../fonts/Lato/Lato-Hairline.ttf);
-    src: url(../fonts/Lato/Lato-HairlineItalic.ttf);
-    src: url(../fonts/Lato/Lato-Italic.ttf);
-    src: url(../fonts/Lato/Lato-Light.ttf);
-    src: url(../fonts/Lato/Lato-LightItalic.ttf);
+   // src: url(../fonts/Lato/Lato-Black.ttf);
+   // src: url(../fonts/Lato/Lato-BlackItalic.ttf);
+   // src: url(../fonts/Lato/Lato-Bold.ttf);
+  //  src: url(../fonts/Lato/Lato-BoldItalic.ttf);
+  //  src: url(../fonts/Lato/Lato-Hairline.ttf);
+  //  src: url(../fonts/Lato/Lato-HairlineItalic.ttf);
+  //  src: url(../fonts/Lato/Lato-Italic.ttf);
+  //  src: url(../fonts/Lato/Lato-Light.ttf);
+  //  src: url(../fonts/Lato/Lato-LightItalic.ttf);
     src: url(../fonts/Lato/Lato-Regular.ttf);
 }
 
-@font-face {
-    font-family: Roboto;
-    src: url(../fonts/Roboto/Roboto-Black.ttf);
-    src: url(../fonts/Roboto/Roboto-BlackItalic.ttf);
-    src: url(../fonts/Roboto/Roboto-Bold.ttf);
-    src: url(../fonts/Roboto/Roboto-BoldItalic.ttf);
-    src: url(../fonts/Roboto/Roboto-Italic.ttf);
-    src: url(../fonts/Roboto/Roboto-Light.ttf);
-    src: url(../fonts/Roboto/Roboto-LightItalic.ttf);
-    src: url(../fonts/Roboto/Roboto-Medium.ttf);
-    src: url(../fonts/Roboto/Roboto-MediumItalic.ttf);
-    src: url(../fonts/Roboto/Roboto-Regular.ttf);
-    src: url(../fonts/Roboto/Roboto-Thin.ttf);
-    src: url(../fonts/Roboto/Roboto-ThinItalic.ttf);
-}
+//@font-face {
+  //  font-family: Roboto;
+//	src: url(../fonts/Roboto/Roboto-Black.ttf);
+ //   src: url(../fonts/Roboto/Roboto-BlackItalic.ttf);
+ //   src: url(../fonts/Roboto/Roboto-Bold.ttf);
+ //   src: url(../fonts/Roboto/Roboto-BoldItalic.ttf);
+ //   src: url(../fonts/Roboto/Roboto-Italic.ttf);
+ //   src: url(../fonts/Roboto/Roboto-Light.ttf);
+ //   src: url(../fonts/Roboto/Roboto-LightItalic.ttf);
+ //   src: url(../fonts/Roboto/Roboto-Medium.ttf);
+ //   src: url(../fonts/Roboto/Roboto-MediumItalic.ttf);
+ //   src: url(../fonts/Roboto/Roboto-Regular.ttf);
+ //   src: url(../fonts/Roboto/Roboto-Thin.ttf);
+  //  src: url(../fonts/Roboto/Roboto-ThinItalic.ttf);
+// }
 
-/*@font-face {
-    font-family: Font-Awesome;
-    src: url(../fonts/font-awesome-4.6.3/fonts/FontAwesome.otf);
-    src: url(../fonts/font-awesome-4.6.3/fonts/fontawesome-webfont.eot);
-    src: url(../fonts/font-awesome-4.6.3/fonts/fontawesome-webfont.svg);
-    src: url(../fonts/font-awesome-4.6.3/fonts/fontawesome-webfont.ttf);
-    src: url(../fonts/font-awesome-4.6.3/fonts/fontawesome-webfont.woff);
-    src: url(../fonts/font-awesome-4.6.3/fonts/fontawesome-webfont.woff2);
-} */
 
 // Конец шрифтов *****************************************************************************
 
@@ -569,7 +560,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 .timeline>li .timeline-image h4 {
 	margin-top: 20px;
 	font-size: 14px;
-	text-transform: none;
+	text-transform: uppercase;
 }
 .timeline>li.timeline-inverted>.timeline-panel {
 	float: right;
@@ -593,7 +584,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 }
 .timeline .timeline-heading h4 {
 	margin-top: 0;
-	text-transform: uppercase;
+	text-transform: none;
 }
 .timeline .timeline-heading h2 {
 	margin-top: 30px;

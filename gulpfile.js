@@ -22,17 +22,18 @@ gulp.task('sass', function() {
 
 gulp.task('scripts', function(){
     return gulp.src([ //Get all need libs
-        'app/libs/jquery/dist/jquery.js', //jQuery
+        //'app/libs/jquery/dist/jquery.js', //jQuery
         'app/libs/bootstrap/dist/js/bootstrap.js', //Bootstrap
         'app/libs/isotope/dist/isotope.pkgd.js', //Isotop
         'app/libs/jquery.easy-pie-chart/dist/jquery.easypiechart.js', // easyPieChart
         'app/libs/waypoints/lib/jquery.waypoints.js', // easyPieChart
         'app/libs/jquery.counterup/jquery.counterup.js', // easyPieChart
-        'app/libs/owl-carousel/owl.carousel.js'// owlCarousel = slider
-       // 'app/libs/contact-me/contact-me.js' // form
+        'app/libs/owl-carousel/owl.carousel.js',// owlCarousel = slider
+        'app/js/main.js'
+        //'app/libs/contact-me/contact-me.js' // form
     ]) 
     .pipe(concat('libs.min.js'))
-    //.pipe(uglify())
+    .pipe(uglify())
     .pipe(gulp.dest('app/js'));
 });
 
@@ -75,7 +76,7 @@ gulp.task('img', function(){
 
 gulp.task('build',['clean', 'img', 'sass', 'scripts'], function() {
     var buildCss = gulp.src([ //Переносим css стили в продакшен
-        'app/css/main.css',
+        //'app/css/main.css',
         'app/css/libs.min.css'
     ])
     .pipe(gulp.dest('dist/css'))

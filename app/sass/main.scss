@@ -179,8 +179,8 @@ nav.navbar-custom {
         color: $secondColor;
         font-size: 20px;
         transition: color 0.2s;
-		padding-right: 8px;
-		padding-left: 7px;
+		//padding-right: 8px;
+		//padding-left: 7px;
 
         &:hover {
             background-color: $navbarCol;
@@ -204,6 +204,10 @@ nav.navbar-custom {
 }
 .navbar-custom .navbar-brand {
     font-weight: 600;
+}
+
+a.navbar-brand.page-scroll {
+	margin-top: 5px;
 }
 
 // End navigation styles ***************************************************************
@@ -830,12 +834,37 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 
 // @media queries -----------------------------------------------------------------------------------------------
 
-@media(min-width:768px) {
+@media screen and (min-width:768px) {
    // .intro {
 	//    height: 100%;
 	//    padding: 0;
 	//    text-align: left;
    // } 
+
+  		 nav.navbar-custom {
+			margin-bottom: 0;
+			background-color: $navbarCol;
+			border-radius: 0px;
+			padding: 6px 0;
+
+			a {
+				
+				color: $secondColor;
+				font-size: 20px;
+				transition: color 0.2s;
+				padding-right: 8px;
+				padding-left: 7px;
+			}
+		}
+
+		div.navbar-header a:first-child {
+			padding-right: 10px; 
+			padding-left: 10px;
+		}
+
+		a.navbar-brand.page-scroll {
+			margin-top: auto;
+		}
 	
     .intro .intro-body H1 {
         font-family: 'Lato', sans-serif;
@@ -898,7 +927,23 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
     }
 }
 
-    @media(min-width:992px) {
+    @media screen and (min-width:992px) {
+
+		nav.navbar-custom {
+			margin-bottom: 0;
+			background-color: $navbarCol;
+			border-radius: 0px;
+			padding: 6px 0;
+
+			a {
+				
+				color: $secondColor;
+				font-size: 20px;
+				transition: color 0.2s;
+				padding-right: 20px;
+				padding-left: 15px;
+			}
+		}
 
     #here-me h1 {
         margin: 10px 0 0px;
@@ -925,7 +970,39 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
     }
 }
 
-    @media(min-width:1200px) {
+    @media screen and (min-width:1200px) {
+
+	nav.navbar-custom {
+		margin-bottom: 0;
+		background-color: $navbarCol;
+		border-radius: 0px;
+		padding: 6px 0;
+
+		a {
+				
+			color: $secondColor;
+			font-size: 20px;
+			transition: color 0.2s;
+			padding-right: 25px;
+			padding-left: 25px;
+		}
+	}
+
+	nav.navbar-custom {
+    margin-bottom: 0;
+    background-color: $navbarCol;
+    border-radius: 0px;
+    padding: 6px 0;
+
+    a {
+        
+        color: $secondColor;
+        font-size: 20px;
+        transition: color 0.2s;
+		//padding-right: 8px;
+		//padding-left: 7px;
+	}
+}
    
     .timeline>li {
         min-height: 170px;

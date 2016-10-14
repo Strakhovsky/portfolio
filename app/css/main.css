@@ -104,9 +104,7 @@ nav.navbar-custom {
     color: #EEEEEE;
     font-size: 20px;
     -webkit-transition: color 0.2s;
-    transition: color 0.2s;
-    padding-right: 8px;
-    padding-left: 7px; }
+    transition: color 0.2s; }
     nav.navbar-custom a:hover {
       background-color: #212121;
       color: #E87E04;
@@ -124,6 +122,9 @@ nav.navbar-custom {
 
 .navbar-custom .navbar-brand {
   font-weight: 600; }
+
+a.navbar-brand.page-scroll {
+  margin-top: 5px; }
 
 #about {
   padding: 80px 0;
@@ -674,7 +675,25 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
   font-size: 12px;
   margin-top: 10px; }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
+  nav.navbar-custom {
+    margin-bottom: 0;
+    background-color: #212121;
+    -webkit-border-radius: 0px;
+            border-radius: 0px;
+    padding: 6px 0; }
+    nav.navbar-custom a {
+      color: #EEEEEE;
+      font-size: 20px;
+      -webkit-transition: color 0.2s;
+      transition: color 0.2s;
+      padding-right: 8px;
+      padding-left: 7px; }
+  div.navbar-header a:first-child {
+    padding-right: 10px;
+    padding-left: 10px; }
+  a.navbar-brand.page-scroll {
+    margin-top: auto; }
   .intro .intro-body H1 {
     font-family: 'Lato', sans-serif;
     font-size: 60px;
@@ -720,7 +739,20 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
     padding: 0 30px 20px 20px;
     text-align: left; } }
 
-@media (min-width: 992px) {
+@media screen and (min-width: 992px) {
+  nav.navbar-custom {
+    margin-bottom: 0;
+    background-color: #212121;
+    -webkit-border-radius: 0px;
+            border-radius: 0px;
+    padding: 6px 0; }
+    nav.navbar-custom a {
+      color: #EEEEEE;
+      font-size: 20px;
+      -webkit-transition: color 0.2s;
+      transition: color 0.2s;
+      padding-right: 20px;
+      padding-left: 15px; }
   #here-me h1 {
     margin: 10px 0 0px; }
   .timeline > li {
@@ -739,7 +771,31 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
   .timeline > li.timeline-inverted > .timeline-panel {
     padding: 0 20px 20px; } }
 
-@media (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
+  nav.navbar-custom {
+    margin-bottom: 0;
+    background-color: #212121;
+    -webkit-border-radius: 0px;
+            border-radius: 0px;
+    padding: 6px 0; }
+    nav.navbar-custom a {
+      color: #EEEEEE;
+      font-size: 20px;
+      -webkit-transition: color 0.2s;
+      transition: color 0.2s;
+      padding-right: 25px;
+      padding-left: 25px; }
+  nav.navbar-custom {
+    margin-bottom: 0;
+    background-color: #212121;
+    -webkit-border-radius: 0px;
+            border-radius: 0px;
+    padding: 6px 0; }
+    nav.navbar-custom a {
+      color: #EEEEEE;
+      font-size: 20px;
+      -webkit-transition: color 0.2s;
+      transition: color 0.2s; }
   .timeline > li {
     min-height: 170px; }
   .timeline > li .timeline-panel {

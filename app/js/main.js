@@ -1,23 +1,26 @@
-// Переход по якорькам на странице
+//Preloaer
+
+$(window).on('load', function () {
+    var $preloaderBackground = $('#preloaderBackground'),
+        $preloader = $('#preloader'),
+        $icon = $preloader.find('.icon');
+    $icon.fadeOut();
+    $preloader.delay(450).fadeOut('slow');
+    $preloaderBackground.delay(550).fadeOut('slow');
+});
+
+// Anchor links
 
  $(document).ready(function(){
-	 //var pageScroll = $('a.page-scroll');
 	$(document).on('click', '.page-scroll', function (event) {
-		//отменяем стандартную обработку нажатия по ссылке
 		event.preventDefault();
-
-		//забираем идентификатор бока с атрибута href
 		var id  = $(this).attr('href'),
-
-		//узнаем высоту от начала страницы до блока на который ссылается якорь
 			top = $(id).offset().top;
-		
-		//анимируем переход на расстояние - top за 800 мс
 		$('body,html').animate({scrollTop: top}, 800);
 	});
 });
 
-// Плавающее навигационное меню
+// Fixed navigation menu
 
 $('#nav').affix({
       offset: {
@@ -25,14 +28,28 @@ $('#nav').affix({
       }
 });
 
-// Плагин Изотоп
+// Isotope plugin. Sorting Portfolio
 
 $(document).ready( function () {
-        var $container = $('.portfolio-items');
+    var $container = $('.portfolio-items');
+    $container.isotope({
+        itemSelector: '.isotope-item',
+        layoutMode: 'fitRows',
+        filter: '*',
+        transitionDuration: '0.8s',
+        animationOptions: {
+            duration: 800,
+            easing: 'linear',
+            queue: false
+        }
+    });
+
+    $('.cat a').click(function() {
+        $('.cat .active').removeClass('active');
+        $(this).addClass('active');
+        var selector = $(this).attr('data-filter');
         $container.isotope({
-            itemSelector: '.isotope-item',
-            layoutMode: 'fitRows',
-            filter: '*',
+            filter: selector,
             transitionDuration: '0.8s',
             animationOptions: {
                 duration: 800,
@@ -40,32 +57,18 @@ $(document).ready( function () {
                 queue: false
             }
         });
-        $('.cat a').click(function() {
-            $('.cat .active').removeClass('active');
-            $(this).addClass('active');
-            var selector = $(this).attr('data-filter');
-            $container.isotope({
-                filter: selector,
-                transitionDuration: '0.8s',
-                animationOptions: {
-                    duration: 800,
-                    easing: 'linear',
-                    queue: false
-                }
-            });
-            return false;
-        });
+        return false;
+    });
 });
 
-// Skills
+// easyPieChart plugin. Skills
 
 $(document).ready(function(e) {
-	//var windowBottom = $(window).height();
 	var index=0;
 	$(document).scroll(function(){
 		var top = $('#skills').height()-$(window).scrollTop();
-		if(top<-1000){
-			if(index==0){	
+		if (top<-1000) {
+			if (index==0) {	
 			
 				$('.chart').easyPieChart({
 					easing: 'easeOutBounce',
@@ -79,43 +82,30 @@ $(document).ready(function(e) {
 				});
 			
 				}
-			index++;
+            index++;
 		}
 	})
 });
 
-// counterUp
+// counterUp plugin. Stats
 
 $(document).ready(function( $ ) {
-		if($("span.count").length > 0){	
-			$('span.count').counterUp({
-					delay: 10, // the delay time in ms
-			time: 1000 // the speed time in ms
-			});
-		}
-	});
-
-// Slider 
-
-$('a.page-scroll').click(function() {
-        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-          var target = $(this.hash);
-          target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-          if (target.length) {
-            $('html,body').animate({
-              scrollTop: target.offset().top - 40
-            }, 900);
-            return false;
-          }
-        }
-      });
-
-  	$(document).ready(function() {
-  	    $("#testimonial").owlCarousel({
-        navigation : false, // Show next and prev buttons
-        slideSpeed : 300,
-        paginationSpeed : 400,
-        singleItem:true
+    if($("span.count").length > 0){	
+        $('span.count').counterUp({
+                delay: 10, // the delay time in ms
+        time: 1000 // the speed time in ms
         });
+    }
+});
 
-  	});
+// owlCarousel plugin. Slider. Testimonials panel 
+
+$(document).ready(function() {
+    $("#testimonial").owlCarousel({
+    navigation : false, // Show next and prev buttons
+    slideSpeed : 300,
+    paginationSpeed : 400,
+    singleItem:true
+    });
+
+});

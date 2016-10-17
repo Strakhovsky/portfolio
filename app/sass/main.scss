@@ -1,45 +1,21 @@
-// Начало шрифтов *********************************************************************
+// Begin fonts *********************************************************************
+
 @font-face {
     font-family: Lato;
-   // src: url(../fonts/Lato/Lato-Black.ttf);
-   // src: url(../fonts/Lato/Lato-BlackItalic.ttf);
-   // src: url(../fonts/Lato/Lato-Bold.ttf);
-  //  src: url(../fonts/Lato/Lato-BoldItalic.ttf);
-  //  src: url(../fonts/Lato/Lato-Hairline.ttf);
-  //  src: url(../fonts/Lato/Lato-HairlineItalic.ttf);
-  //  src: url(../fonts/Lato/Lato-Italic.ttf);
-  //  src: url(../fonts/Lato/Lato-Light.ttf);
-  //  src: url(../fonts/Lato/Lato-LightItalic.ttf);
     src: url(../fonts/Lato/Lato-Regular.ttf);
 }
 
-//@font-face {
-  //  font-family: Roboto;
-//	src: url(../fonts/Roboto/Roboto-Black.ttf);
- //   src: url(../fonts/Roboto/Roboto-BlackItalic.ttf);
- //   src: url(../fonts/Roboto/Roboto-Bold.ttf);
- //   src: url(../fonts/Roboto/Roboto-BoldItalic.ttf);
- //   src: url(../fonts/Roboto/Roboto-Italic.ttf);
- //   src: url(../fonts/Roboto/Roboto-Light.ttf);
- //   src: url(../fonts/Roboto/Roboto-LightItalic.ttf);
- //   src: url(../fonts/Roboto/Roboto-Medium.ttf);
- //   src: url(../fonts/Roboto/Roboto-MediumItalic.ttf);
- //   src: url(../fonts/Roboto/Roboto-Regular.ttf);
- //   src: url(../fonts/Roboto/Roboto-Thin.ttf);
-  //  src: url(../fonts/Roboto/Roboto-ThinItalic.ttf);
-// }
+// Ending fonts *****************************************************************************
 
+// Begin variables *************************************************************************
 
-// Конец шрифтов *****************************************************************************
-
-// Начало переменных *************************************************************************
 $secondColor: #EEEEEE;
 $navbarCol: #212121;
 $orange: #E87E04;
 
-// Конец переменных **************************************************************************
+// Ending variables **************************************************************************
 
-// Начало общих стилей ********************************************************************
+// Begin common styles ********************************************************************
 
 body, html {
     font-family: 'Lato', sans-serif;
@@ -75,17 +51,15 @@ h2 {
 
 ul, ol {
 	padding: 0;
-	webkit-padding: 0;
-	moz-padding: 0;
 }
 
 ul, ol {
 	list-style: none;
 }
 
-// Конец общих стилей ************************************************************************
+// Ending common styles ************************************************************************
 
-// Начало стилей Header'a ********************************************************************
+// Begin Header styles ********************************************************************
 
 .intro {
     background: url(../img/intro-js.jpg) no-repeat fixed center;
@@ -98,20 +72,14 @@ ul, ol {
 }
 
 header .intro-text {
-    //padding-top: 200px;
-    //padding-bottom: 200px;
-    
      
      h1 {
         font-weight: 600;
 		font-size: 40px;
-        
-        
         color: $secondColor;
     }
 
     p {
-        //font-size: 40px;
         color: $secondColor;
         margin-bottom: 30px;
     }
@@ -129,24 +97,25 @@ header .intro-text {
             color: #2c3e50;
             text-decoration: none;
             border: 2px solid #E0F2F1;
-            }
+		}
+
         &:active {
             background-color: #E0F2F1;
             color: #2c3e50;
             text-decoration: none;
             border: 2px solid #E0F2F1;
-            }
-        &:visited {
-            text-decoration: none;
-            }
-        &:focus {
-            text-decoration: none;
-            }
+        }
+
+        &:visited {text-decoration: none;}
+
+        &:focus {text-decoration: none;}
+
         }
     }
-// Конец стилей Header'a ******************************************************************************
 
-// Стили навигации ************************************************************************************
+// Ending Header styles ******************************************************************************
+
+// Begin Navigation styles ***************************************************************************
 
 div#nav {
     z-index: 9999;
@@ -179,41 +148,40 @@ nav.navbar-custom {
         color: $secondColor;
         font-size: 20px;
         transition: color 0.2s;
-		//padding-right: 8px;
-		//padding-left: 7px;
 
         &:hover {
             background-color: $navbarCol;
             color: $orange;
             text-decoration: none;
         }
+
         &:active {
             background-color: $navbarCol;
             color: $orange;
             text-decoration: none;
         }
+
         &:visited {
             background-color: $navbarCol;
             text-decoration: none;
         }
+
         &:focus {
 			background-color: $navbarCol;
             text-decoration: none;
+
         }
     }
 }
-.navbar-custom .navbar-brand {
-    font-weight: 600;
-}
 
-a.navbar-brand.page-scroll {
-	margin-top: 5px;
-}
+.navbar-custom .navbar-brand {font-weight: 600;}
 
-// End navigation styles ***************************************************************
+a.navbar-brand.page-scroll {margin-top: 5px;}
+
+// Ending Navigation styles ***************************************************************
 
 
-// Start about styles *******************************************************************
+// Bigin About styles *******************************************************************
 
 #about {
     padding: 80px 0;
@@ -240,7 +208,6 @@ a.navbar-brand.page-scroll {
             border: 2px solid $orange;
         }
     }
-
 }
 
 .section-title.center {
@@ -265,9 +232,9 @@ a.navbar-brand.page-scroll {
     margin-bottom: 30px;
 }
 
-// End about styles ******************************************************************
+// Ending About styles ****************************************************************
 
-// Start services styles **************************************************************
+// Begin Services styles **************************************************************
 
 #services {
 	padding: 80px 0;
@@ -276,17 +243,11 @@ a.navbar-brand.page-scroll {
 	background-size: cover;
 	background-attachment: fixed;
 
-		.service {
-			padding-bottom: 40px;
-		}
+		.service {padding-bottom: 40px;}
         
-        i.glyphicon {
-            font-size: 50px;
-        }
+        i.glyphicon {font-size: 50px;}
 
-        .fa {
-            font-size: 60px;
-        }
+        .fa {font-size: 60px;}
 
         h4 {
             color: $orange;
@@ -294,12 +255,10 @@ a.navbar-brand.page-scroll {
         }
 }
 
-.space {
-    margin-top: 40px;
-}
+.space {margin-top: 40px;}
 
 
-// End services styles ******************************************************************
+// Ending Services styles ******************************************************************
 
 // Start portfolio styles ***************************************************************
 
@@ -312,102 +271,69 @@ a.navbar-brand.page-scroll {
 	background: -o-linear-gradient(top, #ffffff 0%, #f4f5f6 49%, #ffffff 100%); /* Opera 11.10+ */
 	background: -ms-linear-gradient(top, #ffffff 0%, #f4f5f6 49%, #ffffff 100%); /* IE10+ */
 	background: linear-gradient(to bottom, #ffffff 0%, #f4f5f6 49%, #ffffff 100%); /* W3C */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff', GradientType=0 ); /* IE6-9 */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff', GradientType=0 ); /* IE6-9 */
+
+	i.fa {
+		font-size: 25px;
+		padding: 5px;
+		color: #E87E04;
+	}
 }
+
 .categories {
 	padding-bottom: 30px;
 	text-align: center;
 }
-.cat li {
-	display: block;
-}
+
+.cat li {display: block;}
 
 ol.type {
 	display: block;
 	text-align: center;
 	
     li {
-     //   margin-left: 20px;
 		padding: 5px 8px;
-    }
+    
 
-   // li:after {
-     //   margin-left: 20px;
-   // }
-    li:last-child:after {
-        content: none;
-    }
-    li a {
-        color: #616e7c;
-        //padding: 5px 8px;
-        font-size: 25px;
-    }
-    li a.active {
-        color: #E87E04;
-        padding: 2px 8px;
-    }
-    li a:hover {
-        color: #E87E04;
-    }
+    	&:last-child:after {content: none;}
+    
+		a {
+			color: #616e7c;
+			font-size: 25px;
+			text-decoration: none;
+			
+			a.active {
+				color: #E87E04;
+				padding: 2px 8px;
+				text-decoration: none;
+			}
+			
+			&:hover {
+				color: #E87E04;
+				text-decoration: none;
+			}
+		}
+	}
 }
-
-/*
-.isotope-item {
-	z-index: 2
-}
-.isotope-hidden.isotope-item {
-	z-index: 1
-}
-.isotope, .isotope-item {
-	// change duration value to whatever you like
-	-webkit-transition-duration: 0.8s;
-	-moz-transition-duration: 0.8s;
-	transition-duration: 0.8s;
-}
-.isotope-item {
-	margin-right: -1px;
-	-webkit-backface-visibility: hidden;
-	backface-visibility: hidden;
-}
-.isotope {
-	-webkit-backface-visibility: hidden;
-	backface-visibility: hidden;
-	-webkit-transition-property: height, width;
-	-moz-transition-property: height, width;
-	transition-property: height, width;
-}
-.isotope .isotope-item {
-	-webkit-backface-visibility: hidden;
-	backface-visibility: hidden;
-	-webkit-transition-property: -webkit-transform, opacity;
-	-moz-transition-property: -moz-transform, opacity;
-	transition-property: transform, opacity;
-}
-*/
 
 .portfolio-item {
-	margin-bottom: 30px;
+	margin: 0 auto 30px;
 	max-width: 600px;
-	//-webkit-transition: all 0.5s ease-out;
-	//-moz-transition: all 0.5s ease-out;
-	//-ms-transition: all 0.5s ease-out;
-	//-o-transition: all 0.5s ease-out;
 	transition: all 0.5s ease-out;
+	
+	&:hover {
+		margin-bottom: 30px;
+		width: 100%;
+		transform: scale(1.06);
+	}
+
+ 	.hover-bg {
+		height: 100%;
+		overflow: hidden;
+		position: relative;
+	}
 }
-.portfolio-item:hover {
-	margin-bottom: 30px;
-	width: 100%;
-	//-webkit-transform: scale(1.2);
-	//-moz-transform: scale(1.2);
-	//-ms-transform: scale(1.2);
-	//-o-transform: scale(1.2);
-	transform: scale(1.06);
-}
-.portfolio-item .hover-bg {
-	height: 100%;
-	overflow: hidden;
-	position: relative;
-}
+
 .hover-bg .hover-text {
 	font-size: 20px;
 	position: absolute;
@@ -420,69 +346,67 @@ ol.type {
 	width: 100%;
 	opacity: 0;
 	transition: all 0.5s;
+	
+	h4 {
+		opacity: 0;
+		font-size: 25px;
+		-webkit-transform: translateY(100%);
+		transform: translateY(100%);
+		transition: all 0.3s;
+	}
+
+	i {
+		opacity: 0;
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+		transition: all 0.3s;
+	}
 }
 
-
-
-.hover-bg .hover-text>h4 {
-	opacity: 0;
-	font-size: 25px;
-	-webkit-transform: translateY(100%);
-	transform: translateY(100%);
-	transition: all 0.3s;
-}
-
-.hover-bg:hover .hover-text>h4 {
-	opacity: 1;
-	-webkit-backface-visibility: hidden;
-	-webkit-transform: translateY(0);
-	transform: translateY(0);
-}
-.hover-bg .hover-text>i {
-	opacity: 0;
-	-webkit-transform: translateY(0);
-	transform: translateY(0);
-	transition: all 0.3s;
-}
-.hover-bg:hover .hover-text>i {
-	opacity: 1;
-	-webkit-backface-visibility: hidden;
-	-webkit-transform: translateY(50%);
-	transform: translateY(50%);
-}
 .hover-bg:hover .hover-text {
 	opacity: 1;
-}
-#portfolio i.fa {
-	font-size: 25px;
-	padding: 5px;
-	color: #E87E04;
+	
+	>h4 {
+		opacity: 1;
+		-webkit-backface-visibility: hidden;
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
+
+	>i {
+		opacity: 1;
+		-webkit-backface-visibility: hidden;
+		-webkit-transform: translateY(50%);
+		transform: translateY(50%);
+	}	
 }
 
-// End Portfolio Styles ----------------------------------------------------------------------------------------------------
 
-// Start Skills Styles  ----------------------------------------------------------------------------------------------------
+// Ending Portfolio Styles ----------------------------------------------------------------------------------------------------
+
+// Begin Skills Styles  ----------------------------------------------------------------------------------------------------
 
 #skills {
 	padding: 80px 0;
 	background: url(../img/skills-bg.jpg);
 	background-size: cover;
 	background-attachment: fixed;
+	
+	p {color: #474d5d;}
+	
+	.skill {
+		margin-bottom: 40px;
+		text-align: center;
+		padding: 0px;
+		
+		h4 {
+			font-weight: 900;
+			font-size: 25px;
+			color: $orange;
+		}
+	}
 }
-#skills p {
-	color: #474d5d;
-}
-#skills .skill {
-	margin-bottom: 40px;
-	text-align: center;
-	padding: 0px;
-}
-#skills .skill h4 {
-	font-weight: 900;
-    font-size: 25px;
-	color: $orange;
-	//text-shadow: 1px 1px #fff;
-}
+
 .chart {
 	position: relative;
 	display: inline-block;
@@ -490,28 +414,31 @@ ol.type {
 	height: 152px;
 	margin-bottom: 26px;
 	text-align: center;
+
+	canvas {
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
 }
-.chart canvas {
-	position: absolute;
-	top: 0;
-	left: 0;
-}
+
 .percent {
 	display: inline-block;
 	font-size: 21px;
 	color: #474d5d;
 	line-height: 152px;
 	z-index: 2;
-}
-.percent:after {
-	content: '%';
-	margin-left: 0.1em;
-	font-size: .8em;
+
+	&:after {
+		content: '%';
+		margin-left: 0.1em;
+		font-size: .8em;
+	}
 }
 
-// End Skills styles --------------------------------------------------------------------------------------------------
+// Ending Skills styles --------------------------------------------------------------------------------------------------
 
-// Start Rusume styles(experience) ------------------------------------------------------------------------------------
+// Begin Rusume styles ------------------------------------------------------------------------------------
 
 #resume {
 	padding: 80px 0;
@@ -522,34 +449,41 @@ ol.type {
 	background: -o-linear-gradient(top, #ffffff 0%, #f4f5f6 50%, #ffffff 100%); /* Opera 11.10+ */
 	background: -ms-linear-gradient(top, #ffffff 0%, #f4f5f6 50%, #ffffff 100%); /* IE10+ */
 	background: linear-gradient(to bottom, #ffffff 0%, #f4f5f6 50%, #ffffff 100%); /* W3C */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff', GradientType=0 ); /* IE6-9 */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff', GradientType=0 ); /* IE6-9 */
 }
+
 .timeline {
 	position: relative;
 	padding: 0;
 	list-style: none;
-}
-.timeline:before {
-	content: "";
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	left: 40px;
-	width: 2px;
-	margin-left: -1.5px;
-	background-color: #eee;
-}
-.timeline>li {
-	position: relative;
-	margin-bottom: 50px;
-	min-height: 50px;
-}
-.timeline>li:before, .timeline>li:after {
-	content: " ";
-	display: table;
-}
-.timeline>li:after {
-	clear: both;
+
+	&:before {
+		content: "";
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 40px;
+		width: 2px;
+		margin-left: -1.5px;
+		background-color: #eee;
+	}
+
+	>li {
+		position: relative;
+		margin-bottom: 50px;
+		min-height: 50px;
+	
+
+		&:before{
+			content: " ";
+			display: table;
+		}
+		&:after {
+			content: " ";
+			display: table;
+			clear: both;
+		}
+	}
 }
 .timeline>li .timeline-panel {
 	float: right;
@@ -574,9 +508,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 	z-index: 100;
 	position: absolute;
 	left: 0;
+
 	width: 70px;
 	height: 70px;
 	margin-left: 0;
+
 	border: 1px solid #eee;
 	border-radius: 100%;
 	text-align: center;
@@ -847,11 +783,28 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 // @media queries -----------------------------------------------------------------------------------------------
 
 @media screen and (min-width:768px) {
-   // .intro {
-	//    height: 100%;
-	//    padding: 0;
-	//    text-align: left;
-   // } 
+
+//------------------Intro Start--------------------------//
+
+header .intro-text {
+	
+	h1 {
+		font-size: 60px;
+    }
+
+    p {
+        margin-bottom: 30px;
+    }
+
+    a.intro-btn {
+            color: $secondColor;
+            border: 2px solid $secondColor;
+            border-radius: 8px;
+            font-size: 25px;
+            margin: 5px;
+            padding: 7px;
+	}
+}
 
 //------------------Navigation Start---------------------//
 
@@ -898,6 +851,7 @@ ol.type {
     li:after {
         content: ' | ';
         margin-left: 20px;
+		
     }
     li:last-child:after {
         content: none;
@@ -905,23 +859,22 @@ ol.type {
     li a {
         color: #616e7c;
         padding: 2px 8px;
-        font-size: 15px;
+        font-size: 20px;
+		//text-decoration: none;
     }
     li a.active {
         color: #E87E04;
         padding: 2px 8px;
+		//text-decoration: none;
     }
     li a:hover {
         color: #E87E04;
+		//text-decoration: none;
     }
 }
 
 .portfolio-item {
 	margin-bottom: 30px;
-	//-webkit-transition: all 0.5s ease-out;
-	//-moz-transition: all 0.5s ease-out;
-	//-ms-transition: all 0.5s ease-out;
-	//-o-transition: all 0.5s ease-out;
 	transition: all 0.5s ease-out;
 }
 .portfolio-item:hover {
@@ -1000,7 +953,7 @@ ol.type {
     }
     .intro .intro-body .intro-text p {
         font-family: 'Lato', sans-serif;
-        font-size: 25px;
+        font-size: 30px;
         margin-bottom: 40px;
         color: $secondColor;
         margin-top: 20px;
@@ -1078,18 +1031,10 @@ ol.type {
 
 .portfolio-item {
 	margin-bottom: 30px;
-	//-webkit-transition: all 0.5s ease-out;
-	//-moz-transition: all 0.5s ease-out;
-	//-ms-transition: all 0.5s ease-out;
-	//-o-transition: all 0.5s ease-out;
 	transition: all 0.5s ease-out;
 }
 .portfolio-item:hover {
 	margin-bottom: 30px;
-	//-webkit-transform: scale(1.2);
-	//-moz-transform: scale(1.2);
-	//-ms-transform: scale(1.2);
-	//-o-transform: scale(1.2);
 	transform: scale(1.17);
 }
 .portfolio-item .hover-bg {
@@ -1202,8 +1147,6 @@ ol.type {
         color: $secondColor;
         font-size: 20px;
         transition: color 0.2s;
-		//padding-right: 8px;
-		//padding-left: 7px;
 	}
 }
 
@@ -1216,7 +1159,7 @@ ol.type {
     .timeline>li .timeline-panel {
         padding: 10px 20px 20px 100px;
     }
-    .timeline>li .timeline-image {
+    .timeline >li .timeline-image {
         width: 150px;
         height: 150px;
         margin-left: -75px;

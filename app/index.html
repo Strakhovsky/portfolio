@@ -3,19 +3,32 @@
     
     <head>
         <title>Jon Snow The King ot the North</title>
+        <link href="css/preloader.css" rel="stylesheet"> <!-- Preload style -->
         <meta itemprop="description" name="description" content="Jon Snow The King ot the North at your service">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="UTF-8">
         <meta property="og:title" content="Jon Snow The King ot the North">
         <meta property="og:type" content="website">
         <meta property="og:url" content="http://jonsnow.zzz.com.ua/">
-        <link href="css/libs.min.css" rel="stylesheet">   
+        <link rel="shortcut icon" href="img/favicon.ico"> <!-- favicon -->
+        <link href="css/libs.min.css" rel="stylesheet">   <!-- All Style -->
+        <link href="css/main.css" rel="stylesheet">   
     </head>
 
     <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
         
+        <!-- Begin Preloader -->
 
-    <!-- ********************************** Header panel start ****************************** -->
+        <div id="preloaderBackground">
+            <div id="preloader" aria-busy="true" aria-label="Loading, please wait." role="progressbar">
+                <img class="icon" src="img/werewolf.svg">
+            </div> 
+        </div>
+
+        <!-- Ending Preloader -->
+
+
+        <!-- ********************************** Begin Header panel ***************************** -->
        
         <header class="intro">
             <div class="intro-body">
@@ -33,9 +46,12 @@
                 </div>
             </div>
         </header>
-        <!-- ********************************** Header panel end ****************************** -->
 
-        <!-- ********************************** Navigation panel start ************************ -->
+        <!-- ********************************** Ending Header panel **************************** -->
+
+
+        <!-- ********************************** Begin Navigation panel ************************* -->
+
         <div id="nav" class="affix-top affix-custom">
             <nav class="navbar navbar-custom">
                 <div class="container">
@@ -74,9 +90,12 @@
                 </div>
             </nav>          
         </div>
-        <!-- ********************************** Navigation panel end ************************ -->
 
-        <!-- ********************************** About panel start *************************** -->
+        <!-- ********************************** Ending Navigation panel ************************ -->
+
+
+        <!-- ********************************** Begin About panel ****************************** -->
+
         <div id="about">
             <div class="container">
                 <div class="section-title text-center center">
@@ -105,9 +124,10 @@
             </div>
         </div>
 
-        <!-- ********************************** About panel end *************************** -->
+        <!-- ********************************** Ending About panel ***************************** -->
 
-        <!-- ********************************** Service panel start ************************* -->
+
+        <!-- ********************************** Begin Service panel **************************** -->
 
         <div id="services" class="text-center">
             <div class="container">
@@ -127,7 +147,7 @@
                         <h4>Stark and Targaryen</h4>
                         <p>Jon is the son of Lady Lyanna Stark, Eddard's sister, with Rhaegar Targaryen.</p>
                     </div>
-                    <div class="col-md-4 col-sm-6 service">
+                    <div class="col-md-4 col-sm-12 service">
                         <i class="glyphicon glyphicon-tower"></i>
                         <h4>Ex Lord Commander</h4>
                         <p>Jon is elected the new Lord Commander of the Night's Watch and pursues an alliance with the wildlings.</p>
@@ -136,7 +156,10 @@
             </div>
         </div>
 
-        <!-- ********************************** Portfolio panel start ************************* -->
+        <!-- ********************************** Begin Service panel **************************** -->
+
+
+        <!-- ********************************** Begin Portfolio panel ************************** -->
 
         <div id="portfolio">
             <div class="container">
@@ -319,9 +342,10 @@
             </div>
         </div>
 
-        <!-- ********************************** Portfolio panel end ************************* -->
+        <!-- ********************************** Ending Portfolio panel ************************* -->
 
-        <!-- ********************************** Skills panel start ************************** -->
+
+        <!-- ********************************** Begin Skills panel ***************************** -->
 
         <div id="skills">
             <div class="container">
@@ -389,9 +413,11 @@
             </div>
         </div>
 
-        <!-- ********************************** Skills panel end ****************************** -->
+        <!-- ********************************** Ending Skills panel **************************** -->
 
-        <!-- ********************************** Resume panel start **************************** -->
+
+        <!-- ********************************** Begin Resume panel ***************************** -->
+
         <div id="resume">
             <div class="container">
                 <div class="section-title text-center center ">
@@ -409,7 +435,7 @@
                                         <br>
                                             -
                                         <br>
-                                       2nd season
+                                        2nd season
                                     </h4>
                                 </div>
                                 <div class="timeline-panel">
@@ -510,7 +536,6 @@
                             </li>
                             
                         </ul>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -592,14 +617,16 @@
                             </li>
                             
                         </ul>
-                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- ********************************** Resume panel end ****************************** -->
 
-        <!-- ********************************** Acievements panel end ****************************** -->
+        <!-- ********************************** Ending Resume panel **************************** -->
+
+
+        <!-- ********************************** Begin Acievements panel ************************ -->
+
         <div id="achievements">
             <div class="container">
                 <div class="section-title text-center center">
@@ -638,10 +665,11 @@
                 </div>
             </div>
         </div>
-        <!-- ********************************** Acievements panel end ****************************** -->
+
+        <!-- ********************************** Ending Acievements panel************************ -->
 
 
-        <!-- ********************************** Testimonials panel start ****************************** -->
+        <!-- ********************************** Begin Testimonials panel *********************** -->
 
         <div id="testimonials" class="text-center">
             <div class="container">
@@ -682,9 +710,10 @@
             </div>
         </div>
         
-        <!-- ********************************** Testimonials panel end ******************************** -->
+        <!-- ********************************** Ending Testimonials panel ********************** -->
 
-        <!-- ********************************** Contact panel start *********************************** -->
+
+        <!-- ********************************** Begin Contact panel **************************** -->
 
         <div id="contact" class="text-center">
             <div class="container">
@@ -747,7 +776,10 @@
             </div>
         </div>
 
-        <!-- ********************************** Footer panel start ************************************* -->
+        <!-- ********************************** Begin Contact panel **************************** -->
+
+
+        <!-- ********************************** Begin Footer panel ***************************** -->
 
         <div id="footer">
             <div class="container text-center">
@@ -757,10 +789,15 @@
             </div>
         </div>
 
-        <!-- ********************************** Footer panel end *************************************** -->
+        <!-- ********************************** Ending Footer panel **************************** -->
+
+
+        <!-- Begin scripts -->
+
         <script   src="http://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
         <script type="text/javascript" src="js/libs.min.js"></script>
-       <!-- <script type="text/javascript" src="js/main.js" ></script> -->
+
+        <!-- Ending scripts -->
 
     </body>
 </html>

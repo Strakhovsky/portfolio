@@ -324,7 +324,7 @@ ol.type {
 	&:hover {
 		margin-bottom: 30px;
 		width: 100%;
-		transform: scale(1.06);
+		transform: scale(1.05);
 	}
 
  	.hover-bg {
@@ -635,7 +635,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 		}
 }
 
-.owl-theme .owl-controls .owl-page span {
+.owl-page span {
 	display: block;
 	width: 10px;
 	height: 10px;
@@ -817,29 +817,43 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 
 @media screen and (min-width:768px) {
 
-//------------------Intro Start--------------------------//
+//------------------Begin Intro Styles--------------------------//
 
 header .intro-text {
+			float: left;
+			text-align: center;
+			max-width: 75%;
 	
-	h1 {
-		font-size: 60px;
-    }
+				h1 {
+					font-size: 60px;
+					letter-spacing: -2px;
+				}
 
-    p {
-        margin-bottom: 30px;
-    }
+				p {
+					margin-bottom: 30px;
+					margin-bottom: 40px;
+					margin-top: 20px;
+				}
 
-    a.intro-btn {
-            color: $secondColor;
-            border: 2px solid $secondColor;
-            border-radius: 8px;
-            font-size: 25px;
-            margin: 5px;
-            padding: 7px;
-	}
+				a.intro-btn {
+						color: $secondColor;
+						border: 2px solid $secondColor;
+						border-radius: 8px;
+						font-size: 25px;
+						margin: 5px;
+						padding: 7px;
+				}
 }
 
-//------------------Navigation Start---------------------//
+    section {
+        padding: 120px 0;
+    }
+
+
+
+//------------------Ending Intro Styles--------------------------//
+
+//------------------Begin Navigation Styles---------------------//
 
   		 nav.navbar-custom {
 			margin-bottom: 0;
@@ -866,9 +880,9 @@ header .intro-text {
 			margin-top: auto;
 		}
 
-//------------------Navigation End---------------------//
+//------------------Ending Navigation Styles---------------------//
 
-//------------------Portfolio Strat--------------------//
+//------------------Begin Portfolio Styles--------------------//
 
 .cat li {
 	display: inline-block;
@@ -886,325 +900,247 @@ ol.type {
         margin-left: 20px;
 		
     }
+
     li:last-child:after {
         content: none;
     }
+
     li a {
         color: #616e7c;
         padding: 2px 8px;
         font-size: 20px;
-		//text-decoration: none;
     }
+
     li a.active {
         color: #E87E04;
         padding: 2px 8px;
-		//text-decoration: none;
     }
+
     li a:hover {
         color: #E87E04;
-		//text-decoration: none;
     }
 }
 
 .portfolio-item {
-	margin-bottom: 30px;
-	transition: all 0.5s ease-out;
+
+
+		&:hover {
+			transform: scale(1.09);
+		}
+
+		.hover-bg {
+
+			height: 260px;
+
+				.hover-text {
+
+					font-size: 17px;
+
+						>h4 {
+
+							font-size: 20px;
+						}
+				}
+		}
 }
-.portfolio-item:hover {
-	margin-bottom: 30px;
-	//-webkit-transform: scale(1.2);
-	//-moz-transform: scale(1.2);
-	//-ms-transform: scale(1.2);
-	//-o-transform: scale(1.2);
-	transform: scale(1.13);
-}
-.portfolio-item .hover-bg {
-	height: 260px;
-	overflow: hidden;
-	position: relative;
-}
-.hover-bg .hover-text {
-	font-size: 17px;
-	position: absolute;
-	text-align: center;
-	margin: 0 auto;
-	color: #ffffff;
-	background: rgba(0, 0, 0, 0.66);
-	padding: 25% 5%;
-	height: 100%;
-	width: 100%;
-	opacity: 0;
-	transition: all 0.5s;
-}
-.hover-bg .hover-text>h4 {
-	font-size: 20px;
-	opacity: 0;
-	-webkit-transform: translateY(100%);
-	transform: translateY(100%);
-	transition: all 0.3s;
-}
-.hover-bg:hover .hover-text>h4 {
-	opacity: 1;
-	-webkit-backface-visibility: hidden;
-	-webkit-transform: translateY(0);
-	transform: translateY(0);
-}
-.hover-bg .hover-text>i {
-	opacity: 0;
-	-webkit-transform: translateY(0);
-	transform: translateY(0);
-	transition: all 0.3s;
-}
-.hover-bg:hover .hover-text>i {
-	opacity: 1;
-	-webkit-backface-visibility: hidden;
-	-webkit-transform: translateY(30%);
-	transform: translateY(30%);
-}
+
 .hover-bg:hover .hover-text {
+
 	opacity: 1;
 }
-#portfolio i.fa {
-	font-size: 20px;
-	padding: 5px;
-	color: #E87E04;
+
+#portfolio { 
+
+		i.fa {
+
+			font-size: 20px;
+			padding: 5px;
+			color: #E87E04;
+		}
+
+		.portfolio-item {
+
+        	margin: 0 0 30px;
+    	}
 }
 
-//------------------Portfolio End----------------------//
-	
-    .intro .intro-body H1 {
-        font-family: 'Lato', sans-serif;
-        font-size: 60px;
-        font-weight: 600;
-        letter-spacing: -2px;
-        color: $secondColor;
-    } 
-    .intro .intro-body .intro-text {
-        float: left;
-        text-align: center;
-        max-width: 75%;
-    }
-    .intro .intro-body .intro-text p {
-        font-family: 'Lato', sans-serif;
-        font-size: 30px;
-        margin-bottom: 40px;
-        color: $secondColor;
-        margin-top: 20px;
-    } 
-    section {
-        padding: 120px 0;
-    } 
-    //header .intro-text {
-    //	padding-top: 300px;
-    //	padding-bottom: 200px;
-    //}
+//------------------Ending Portfolio Styles----------------------//
 
-//------------------Portfolio Start---------------------//
+//------------------Begin Resume Styles---------------------//
 
-    #portfolio .portfolio-item {
-        margin: 0 0 30px;
-    }
-
-//------------------Portfolio End----------------------//
     .timeline:before {
         left: 50%;
     }
+
     .timeline>li {
         margin-bottom: 100px;
         min-height: 100px;
     }
+
     .timeline>li .timeline-panel {
         float: left;
         width: 41%;
         padding: 0 20px 20px 30px;
         text-align: right;
     }
+
     .timeline>li .timeline-image {
         left: 50%;
         width: 100px;
         height: 100px;
         margin-left: -50px;
+
+			h4 {
+				margin-top: 22px;
+				line-height: 18px;
+				font-weight: 400;
+				font-size: 14px;
+    		}
     }
-    .timeline>li .timeline-image h4 {
-        margin-top: 22px;
-        line-height: 18px;
-        font-weight: 400;
-		font-size: 14px;
-    }
+
     .timeline>li.timeline-inverted>.timeline-panel {
         float: right;
         padding: 0 30px 20px 20px;
         text-align: left;
     }
+
 }
 
-    @media screen and (min-width:992px) { // (min-width:992px)---(min-width:992px)---(min-width:992px)---
+//------------------Ending Resume Styles---------------------//
 
-//------------------Navigation Start---------------------//
+    @media screen and (min-width:992px) { // (min-width:992px)---(min-width:992px)---(min-width:992px)---(min-width:992px)---
 
-		nav.navbar-custom {
-			margin-bottom: 0;
-			background-color: $navbarCol;
-			border-radius: 0px;
-			padding: 6px 0;
+//------------------Begin Navigation Styles---------------------//
+
+	nav.navbar-custom {
 
 			a {
-				
-				color: $secondColor;
-				font-size: 20px;
-				transition: color 0.2s;
 				padding-right: 20px;
 				padding-left: 15px;
 			}
-		}
+	}
 
-//------------------Navigation End---------------------//
+//------------------Ending Navigation Styles---------------------//
 
-//------------------Portfolio start--------------------//
+//------------------Begin Portfolio Styles--------------------//
+
 
 .portfolio-item {
 	margin-bottom: 30px;
-	transition: all 0.5s ease-out;
+
+		&:hover {
+			transform: scale(1.17);
+		}
+
+		.hover-bg {
+
+			height: 100%;
+
+				.hover-text {
+
+					font-size: 15px;
+
+						>h4 {
+
+							font-size: 20px;
+						}
+				}
+		}
 }
-.portfolio-item:hover {
-	margin-bottom: 30px;
-	transform: scale(1.17);
-}
-.portfolio-item .hover-bg {
-	height: 100%;
-	overflow: hidden;
-	position: relative;
-}
-.hover-bg .hover-text {
-	font-size: 15px;
-	position: absolute;
-	text-align: center;
-	margin: 0 auto;
-	color: #ffffff;
-	background: rgba(0, 0, 0, 0.66);
-	padding: 25% 5%;
-	height: 100%;
-	width: 100%;
-	opacity: 0;
-	transition: all 0.5s;
-}
-.hover-bg .hover-text>h4 {
-	font-size: 20px;
-	opacity: 0;
-	-webkit-transform: translateY(100%);
-	transform: translateY(100%);
-	transition: all 0.3s;
-}
-.hover-bg:hover .hover-text>h4 {
-	opacity: 1;
-	-webkit-backface-visibility: hidden;
-	-webkit-transform: translateY(0);
-	transform: translateY(0);
-}
-.hover-bg .hover-text>i {
-	opacity: 0;
-	-webkit-transform: translateY(0);
-	transform: translateY(0);
-	transition: all 0.3s;
-}
+
 .hover-bg:hover .hover-text>i {
 	opacity: 1;
 	-webkit-backface-visibility: hidden;
 	-webkit-transform: translateY(20%);
 	transform: translateY(20%);
 }
-.hover-bg:hover .hover-text {
-	opacity: 1;
-}
+
 #portfolio i.fa {
 	font-size: 15px;
 	padding: 5px;
 	color: #E87E04;
 }
 
-//------------------Portfolio End---------------------//
+//------------------Ending Portfolio Styles---------------------//
+
+//------------------Begin Resume Styles---------------------//
 
     #here-me h1 {
         margin: 10px 0 0px;
     }
+
     .timeline>li {
         min-height: 150px;
-    }
-    .timeline>li .timeline-panel {
-        padding: 0 20px 20px;
-    }
-    .timeline>li .timeline-image {
-        width: 150px;
-        height: 150px;
-        margin-left: -75px;
-    }
-    .timeline>li .timeline-image h4 {
-        margin-top: 30px;
-        font-size: 18px;
-        line-height: 26px;
-		font-size: 20px;
-    }
+
+			.timeline-panel {
+				padding: 0 20px 20px;
+			}
+
+			.timeline-image {
+				width: 150px;
+				height: 150px;
+				margin-left: -75px;
+			
+					h4 {
+						margin-top: 30px;
+						font-size: 18px;
+						line-height: 26px;
+						font-size: 20px;
+					}
+			}
+	}
+
     .timeline>li.timeline-inverted>.timeline-panel {
         padding: 0 20px 20px;
     }
+
+//------------------Ending Resume Styles---------------------//
+
 }
 
     @media screen and (min-width:1200px) { // (min-width:1200px)---(min-width:1200px)---(min-width:1200px)---
 
-//------------------Navigation Start---------------------//
+//------------------Begin Navigation Styles---------------------//
 
 	nav.navbar-custom {
-		margin-bottom: 0;
-		background-color: $navbarCol;
-		border-radius: 0px;
-		padding: 6px 0;
 
-		a {
-				
-			color: $secondColor;
-			font-size: 20px;
-			transition: color 0.2s;
-			padding-right: 25px;
-			padding-left: 25px;
-		}
+			a {
+				padding-right: 25px;
+				padding-left: 25px;
+			}
 	}
 
-	nav.navbar-custom {
-    margin-bottom: 0;
-    background-color: $navbarCol;
-    border-radius: 0px;
-    padding: 6px 0;
+//------------------Ending Navigation Styles---------------------//
 
-    a {
-        
-        color: $secondColor;
-        font-size: 20px;
-        transition: color 0.2s;
-	}
-}
-
-//------------------Navigation End---------------------//
-
+//------------------Begin Resume Styles---------------------//
 
     .timeline>li {
         min-height: 170px;
-    }
-    .timeline>li .timeline-panel {
-        padding: 10px 20px 20px 100px;
-    }
-    .timeline >li .timeline-image {
-        width: 150px;
-        height: 150px;
-        margin-left: -75px;
-    }
-    .timeline>li .timeline-image h4 {
-        margin-top: 34px;
-        font-weight: 400;
-		font-size: 18px;
-    }
+    
+			.timeline-panel {
+				padding: 10px 20px 20px 100px;
+			}
+
+			.timeline-image {
+				width: 150px;
+				height: 150px;
+				margin-left: -75px;
+			
+
+					h4 {
+						margin-top: 34px;
+						font-weight: 400;
+						font-size: 18px;
+					}
+			}
+	}
+
     .timeline>li.timeline-inverted>.timeline-panel {
         padding: 10px 100px 20px 20px;
     }
+
+//------------------Ending Resume Styles---------------------//
+
 }
 
-// @mediaqueries end ******************************************************************
+// @mediaqueries end ****************************************************************

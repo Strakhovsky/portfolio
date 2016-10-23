@@ -76,7 +76,7 @@ gulp.task('img', function(){
 
 gulp.task('build',['clean', 'img', 'sass', 'scripts'], function() {
     var buildCss = gulp.src([ //Переносим css стили в продакшен
-        //'app/css/main.css',
+        'app/css/preloader.css',
         'app/css/libs.min.css'
     ])
     .pipe(gulp.dest('dist/css'))
